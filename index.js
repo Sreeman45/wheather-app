@@ -9,7 +9,7 @@ const span_2=span[1]
 const span_3=span[2]
 const span_4=span[3]
 const wheather = async (cityname) => {
-    let api = await fetch(`http://api.weatherapi.com/v1/current.json?key=75543c671a7042069c5114741240412&q=${cityname}&aqi=yes`)
+    let api = await fetch(`https://api.weatherapi.com/v1/current.json?key=75543c671a7042069c5114741240412&q=${cityname}&aqi=yes`)
     let json = await api.json()
     let location = json.location
     let current = json.current
